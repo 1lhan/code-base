@@ -1,0 +1,42 @@
+$bg-primary: #222a3d;
+$blue: #066edd;
+$green: #34d399;
+$red: #ff6c6c;
+$orange: #fb923c;
+$border-bg: #263347;
+
+.container {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+@keyframes rainbow {
+    0% {
+        background: #34d399;
+    }
+
+    16% {
+        background: #ff6c6c;
+    }
+
+    32% {
+        background: #a014fd;
+    }
+
+    48% {
+        background: #7290f3;
+    }
+
+    64% {
+        background: #05c7e6;
+    }
+
+    82% {
+        background: #dfd051;
+    }
+
+    100% {
+        background: #34d399;
+    }
+}

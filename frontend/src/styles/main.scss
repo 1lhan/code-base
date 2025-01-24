@@ -1,0 +1,13 @@
+@import '_mixins';
+@import '_global';
+@import '_base';
+@import '_columnChart';
+
+.home-page {
+    @include flex(row, center, center);
+    padding-top: 5rem;
+
+    .column-chart-wrapper {
+        width: 45rem;
+    }
+}

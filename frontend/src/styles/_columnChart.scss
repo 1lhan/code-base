@@ -1,0 +1,98 @@
+.column-chart {
+    @include flex(column, flex-start, stretch);
+    background: $bg-primary;
+    border-radius: 0.5rem;
+    padding: 1rem;
+
+    .chart-header {
+        @include flex(row, space-between, center);
+        flex-wrap: wrap;
+        gap: 0.5rem;
+
+        .color-info {
+            @include flex(row, center, center);
+            gap: 0.5rem;
+            font-size: 0.9rem;
+
+            div {
+                @include flex(row, center, center);
+                gap: 0.25rem;
+                line-height: 0.1rem;
+
+                span:nth-of-type(1) {
+                    width: 6px;
+                    aspect-ratio: 1;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+
+    .chart-body {
+        @include flex(row, flex-start, stretch);
+        aspect-ratio: 1/0.5;
+        gap: 1.25%;
+
+        .chart-body-item {
+            @include flex(row, stretch, flex-end);
+            position: relative;
+            flex: 1;
+            gap: 5%;
+
+            .column {
+                flex: 1;
+                border-radius: 0.25rem;
+            }
+
+            .tool-tip {
+                position: absolute;
+                top: calc(100% + 0.5rem);
+                left: 50%;
+                transform: translateX(-50%);
+                padding: 0.3rem;
+                border-radius: 0.25rem;
+                border: 1px solid $border-bg;
+                background: rgba(15, 22, 37);
+                font-size: 0.95rem;
+
+                .arrow {
+                    position: absolute;
+                    left: 50%;
+                    top: 0;
+                    transform: translate(-50%, -50%) rotate(45deg);
+                    width: 0.75rem;
+                    aspect-ratio: 1;
+                    border-top: 1px solid $border-bg;
+                    border-left: 1px solid $border-bg;
+                    background: rgba(15, 22, 37);
+                }
+
+                .content {
+                    @include flex(column, flex-start, stretch);
+                    gap: 0.1rem;
+
+                    div {
+                        @include flex(row, space-between, center);
+                        gap: 0.5rem;
+
+                        span:nth-of-type(1) {
+                            text-transform: capitalize;
+                        }
+
+                        span:nth-of-type(2) {
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .color1 {
+        background: $blue;
+    }
+
+    .color2 {
+        background: #9333ea;
+    }
+}

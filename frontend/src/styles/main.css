@@ -1,0 +1,140 @@
+.container {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: #0f1625;
+}
+
+.column-chart {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  background: #222a3d;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+.column-chart .chart-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.column-chart .chart-header .color-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+.column-chart .chart-header .color-info div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  line-height: 0.1rem;
+}
+.column-chart .chart-header .color-info div span:nth-of-type(1) {
+  width: 6px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+.column-chart .chart-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  aspect-ratio: 1/0.5;
+  gap: 1.25%;
+}
+.column-chart .chart-body .chart-body-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  align-items: flex-end;
+  position: relative;
+  flex: 1;
+  gap: 5%;
+}
+.column-chart .chart-body .chart-body-item .column {
+  flex: 1;
+  border-radius: 0.25rem;
+}
+.column-chart .chart-body .chart-body-item .tool-tip {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.3rem;
+  border-radius: 0.25rem;
+  border: 1px solid #263347;
+  background: rgb(15, 22, 37);
+  font-size: 0.95rem;
+}
+.column-chart .chart-body .chart-body-item .tool-tip .arrow {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 0.75rem;
+  aspect-ratio: 1;
+  border-top: 1px solid #263347;
+  border-left: 1px solid #263347;
+  background: rgb(15, 22, 37);
+}
+.column-chart .chart-body .chart-body-item .tool-tip .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 0.1rem;
+}
+.column-chart .chart-body .chart-body-item .tool-tip .content div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+.column-chart .chart-body .chart-body-item .tool-tip .content div span:nth-of-type(1) {
+  text-transform: capitalize;
+}
+.column-chart .chart-body .chart-body-item .tool-tip .content div span:nth-of-type(2) {
+  font-weight: 600;
+}
+.column-chart .color1 {
+  background: #066edd;
+}
+.column-chart .color2 {
+  background: #9333ea;
+}
+
+.home-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5rem;
+}
+.home-page .column-chart-wrapper {
+  width: 45rem;
+}/*# sourceMappingURL=main.css.map */
